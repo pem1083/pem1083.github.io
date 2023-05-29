@@ -1,0 +1,105 @@
+/* el css de responcividad de la pagina de servicios*/
+/* responcive Tablets */
+@media screen and (max-width: 768px){
+    .menuBurger{
+        display: flex;
+    }
+    .menu-ul{
+        display: none;
+    }
+    .show{
+        display:flex;
+    }
+
+}
+/* **************************************************************************************
+*************************************************************************************** */
+/* respocive Movil */
+@media screen and (max-width:375px){
+    .menuBurger{
+        display: flex;
+    }
+    .menu-ul{
+        display: none;
+    }
+    .show{
+        display: flex;
+        
+    }
+    /* desde aca midifico las dispocicion de las imaganes del main */
+    .main{
+        height: 90vh;
+    }
+    .section-img{
+        width: 374px;
+        height: 60%;
+        margin:2px;
+        display: grid;
+        gap: 1rem;
+        grid:
+            'viaja exp'
+            'vuelos escapadas'
+            'promo promo';
+        
+    }
+    .viaja,
+    .experiencias,
+    .vuelos,
+    .escapadas{
+        display: none;
+    }
+    /* ***************************************** */
+    .viaja-cl{
+        grid-area: viaja;
+    }
+    .experiencias-cl{
+        grid-area: exp;
+    }
+    .vuelos-cl{
+        grid-area: vuelos;
+    }
+    .escapadas-cl{
+        grid-area: escapadas;
+    }
+    .txt-promo{
+        visibility: visible;
+        grid-area: promo;
+    }
+    .viaja-cl,
+    .experiencias-cl,
+    .vuelos-cl,
+    .escapadas-cl{
+        display: flex;
+        width: calc(var(--sise-root)*3);
+        height: calc(var(--sise-root)*2);
+    }
+    .viaja-cl{
+        padding: 20px;
+        left:20px;
+        background-repeat: no-repeat;
+        background-image: url("/assets/media/img/icons8-al-rededor-del-mundo-100.png")
+    }
+    .experiencias-cl{
+        padding: 20px;
+        justify-self:center;
+        background-repeat: no-repeat;
+        background-image: url("/assets/media/img/icons8-montaña-64.png")
+    }
+    .vuelos-cl{
+        padding: 20px;
+        justify-self:center;
+        background-repeat: no-repeat;
+        background-image: url("/assets/media/img/icons8-despegue-96.png")
+    }
+    .escapadas-cl{
+        padding: 20px;
+        justify-self:center;
+        background-repeat: no-repeat;
+        background-image: url("/assets/media/img/icons8-aventura-64.png");
+    }
+    .txt-promo{
+        margin: 12px;
+    }    
+    
+
+}

@@ -1,0 +1,47 @@
+
+#valores {
+    background-color:rgba(148, 170, 172, 0.788);
+    color: rgb(43, 65, 85);
+    font-family: 'Poppins', sans-serif;
+
+    }
+.tituloencab {
+    text-align:center
+}
+.form {
+    background-color:rgba(148, 170, 172, 0.788);
+    justify-content: center;
+        border: 5px solid darkblue;
+        width: 100px;
+        height: 300px;
+        margin: auto;
+        padding: 10%;
+            }
+.footer  ul li{
+    justify-content: center;
+    border-radius: 5px; 
+    background-color: var(--footer-arena); 
+    width: 130px;
+    height: auto;
+    padding: 10px;   
+    margin:3px;
+    text-align: center; 
+    text-decoration: none;
+    color: black;
+}
+body{
+    background-color: var(--fondo-arena);
+    padding: 0;
+    margin: 0;
+ }
+header{
+    background-color:rgba(6, 214, 160, .4);
+    height: 100px; 
+    margin: 0;
+
+}
+main{
+    height: 400px;
+}
+/*footer{
+    background-color: var(--footer-arena);

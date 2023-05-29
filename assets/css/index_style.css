@@ -1,0 +1,145 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    display: flex;
+    
+    /* FLEX */ 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.nav-header  ul li{
+    justify-content: center;
+    border-radius: 5px; 
+    background-color: var(--menu-azul);background-color: var(--menu-azul);
+    width: auto;
+    height: 30px;   
+    margin:3px;
+    display: flex;    
+    text-decoration: none;
+    color: black;
+}
+.nav-header ul li:hover{
+    z-index: 1;
+    background-color:  rgba(17, 138, 178, 1);
+    box-shadow: 8px 10px 8px rgba(12, 100, 129, 0.986);
+
+}
+.container{
+    width: 153px;
+    height: 188px;
+    background-color: rgba(6, 214, 160, .4);
+    padding: 10px;
+    margin: 7px;
+    border-radius: 5px;
+    position:fixed;
+    /*Grid*/ 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:[l1] 1fr [l2] 1fr [l3] 1fr;
+}
+.container div:hover{
+    z-index: 1;
+    background-color:  rgba(17, 138, 178, 1);
+    box-shadow: 8px 10px 8px rgba(12, 100, 129, 0.986);
+
+}
+.center{
+    height: calc(var(--sise-root)*2);
+
+    /* Flex */ 
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.center div{
+    position: relative;
+    top:0;
+    left: calc(var(--sise-root)*3);
+    margin:5px;
+    display: flex;
+    width: calc(var(--sise-root)*16);
+    height: calc(var(--sise-root)*14);
+    overflow:hidden;
+    border-style: solid;
+    
+}
+.primero{
+    background-image: url("../media/img/rio-1.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* */
+/* */
+ /* --------------CSS DANO------------------------- */
+ /* */
+ /* */
+.presentacion {
+
+      background-size: 40px;
+}   
+
+.fondo2{
+    background-image: url("../media/img/travel2.png");    
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150px;
+    background-position: center;
+    animation: bounce 1s ease-in-out 1;
+}
+.fondo1 {
+    background-image: url("../media/img/travel.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150px;
+    background-position: center;
+    animation: bounce 1s ease-in-out 1;
+}
+.presentacion p {
+    animation: bounce 1s ease-in-out 1;
+    background-size: 40px;
+}
+.presentacion h2 {
+    animation: bounce 1s ease-in-out 1;
+    background-color: var(--footer-arena);
+    font-family: 'La Belle Aurore', cursive;
+    border-radius: 10px;
+    text-align: center;
+    
+} 
+/*ANIMACION */
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    15% {
+        transform: translateY(100px);
+    }
+}
+.containerP {
+    display: flex;
+    background-color: var(--menu-azul);background-color: var(--menu-azul);
+    text-align: center;
+    animation: bounce 1s ease-in-out 1; 
+    
+}
+.enlace:hover {
+    z-index: 1;
+    
+    /*box-shadow: 8px 10px 8px rgba(12, 100, 129, 0.986);*/
+    background-size: auto;
+}
+.enlace > a {
+    border-radius: 5px;
+    box-shadow: 8px 10px 8px rgba(12, 100, 129, 0.986);
+    background-color: var(--footer-arena);
+     
+    background-size: 80px;
+}
+

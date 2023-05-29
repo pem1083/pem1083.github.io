@@ -1,0 +1,187 @@
+/* tablet index */
+@media screen and (max-width:760px){
+    .body-container{
+        width: 100%;
+        height: auto;
+        display:flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .header{
+        height: 22vh;
+        display: flex;
+        position: relative;
+    }
+    
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    ul{
+        top: 0px;
+        list-style: none;
+    }
+    .nav-header{
+        width: 100%;
+        /* position: relative; */
+        /* FLEX */
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content:space-evenly;
+        align-items:center;
+        
+    }
+    .menu-ul,
+    .show{
+        /* background-color: rgba(6, 214, 160, .4);  */
+        height: 0px;
+        width: 0px;
+        left:50vw;
+        margin-top: 0px;
+        
+        transition: height 2s;  
+        flex-direction: column;
+        gap:2px;  
+    }
+    .menu-ul li, .show li{
+        
+        border-radius: 5px; 
+        /* background-color: rgba(6, 214, 160, .4);  */
+        height: 0px;
+        padding: 0px;    
+        margin:2px; 
+        text-align: center; 
+        text-decoration: none;
+        color: black;
+        transition: height 1s, padding 2s;
+    }
+    .menuBurger{
+        align-items: center;
+        justify-content: space-around;
+        display:flex;
+    }
+    .menu-ul li{
+        display:none;
+    }
+    .show li{
+        display:flex;
+        padding: 5px;
+        height: 10px;
+        
+    }
+    .show{
+        height: 100px;
+        width: 160px;
+    }
+
+/* Hover */
+.nav-header ul li:hover{
+    z-index: 1;
+    background-color:  rgba(17, 138, 178, .7);
+    box-shadow: 8px 10px 8px rgba(12, 100, 129, 0.986);
+}
+    /* .nav-header ul{
+        height: 16vh;
+        flex-direction: column;
+        visibility: visible;
+    }
+    .nav-header ul li{
+        margin: 0;
+        padding: 5px;
+    } */
+    
+    /* activo el menu desplegable /
+    .container{
+        
+        visibility:visible;
+    } 
+    /* ********************************************************************************************** */
+    /*MAIN  */
+    .main{
+        width: auto;
+        display: flex;
+    }
+    
+    .section-img{
+        margin: 5px 10px 5px 10px; 
+        flex-grow: 1;
+        flex-direction: column;
+    }
+     
+    .section-img div{
+        width: max-content;
+        height: 50px;
+        flex-direction: column;
+    }
+    .section-img div:hover{
+        height: 95px;
+    }
+   
+}    
+ /* ********** */
+/* celu index */
+/* **************************************************************************************************************** */
+@media screen and (max-width:360px){
+    .body-container {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100%;
+        right: 5px;
+
+        
+    }
+    .menuBurger{
+        width: 50px;
+        height: 50px;
+
+    }
+    .menuBurger::after{
+        content: url("/assets/media/img/menuBurger-cel.png");
+    }
+    .cerrar::after {
+        content: url("/assets/media/img/cancelar-cel.png");
+        
+    }
+    .menu-ul{
+        top:80px;
+        position: absolute;
+    }
+    
+    .container,
+    .footer{
+        display: none;
+    }
+    .main{
+        display: flex;
+        padding: 0;
+        flex-direction: row-reverse;
+        flex-wrap:nowrap;
+        align-content: space-around;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    .header{
+        width: 100vw;
+    }
+    .section-img {
+        width: 357px;
+        height: 380px;
+        margin-top: 10px;
+        border-radius: 3px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: column;
+        align-content: center;
+        justify-content: flex-end;
+    }
+    .menuToggle{
+        visibility: visible;
+        z-index: 10;
+    }
+
+}

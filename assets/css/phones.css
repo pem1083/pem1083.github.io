@@ -1,0 +1,339 @@
+/* Establece el tamaño de la fuente y el ancho del contenedor */
+html { 
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* Utiliza media queries */ 
+@media screen and (max-width: 768px) { 
+    
+    /* Cambiar el diseño a una sola columna */ 
+    .containerP {
+        display: flex;
+        flex-direction: column;
+    }
+
+/* Utiliza un diseño fluido */ 
+.presentacion {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+@media (max-width: 705px) {
+    .fondo1, .fondo2 {
+        background-color: var(--footer-arena);
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: bounce 1s ease-in-out 1;
+        flex-wrap: wrap;
+        background-position: center;
+    }
+    .fondo1, .fondo2 > h1 {
+        color: black;
+    }
+    .nav-header {
+        display: none;
+    }
+    
+    .footer-bg {
+        display: none;
+    }
+}
+
+@media (max-width: 75px) {
+    .menu {
+        border-radius: 5px; 
+        background-color: var(--menu-azul);background-color: var(--menu-azul);
+        width: 70px;
+        height: 30px;   
+        margin:3px;
+        display: flex;    
+        text-decoration: none;
+        color: black;
+        float:right;       
+    }
+    .menu ul li:hover{
+        z-index: 1;
+        background-color:  rgba(17, 138, 178, 1);
+        box-shadow: 8px 10px 8px rgba(12, 100, 129, 0.986);
+}
+    header > h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width:375px) {
+    .containerP {
+    background-color: var(--header-azul);
+
+}
+    .presentacion {
+   
+    position: relative;
+    width: calc(var(--sise-root));
+    background-color: var(--menu-azul);
+    padding: 50px;   
+    
+}
+}
+.footer-bg {
+    display: none;
+}
+}
+
+.menuToggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+  }
+.menuToggle:checked ~ .menu {
+    right: 0;
+}
+
+ @media screen and (max-width: 767px) {
+    .menuToggle {
+      display: block;
+    }
+  }
+  @media screen and (max-width:360px){
+    .container{
+        visibility:hidden;
+        width: 0px;
+        margin-top: 0px;
+    }
+    .body-container{
+        justify-items: center;
+        align-items: baseline;
+        justify-content: space-evenly;
+        align-content: center;
+         
+    }
+    .section-img div{
+        border-color: aqua;
+        border-width: 8px;
+        border-right-style:  solid;
+        border-left-style: solid;
+        border-radius: 5px;
+        width: 350px;
+        height: 50px;
+            
+        transition: 1s;
+        flex-direction: column;
+    }
+    .section-img div:hover{
+        height: 95px;
+    }
+    
+}
+
+/*---MENU HAMBURGUESA ---*/
+.menu {
+    background-color: var(--footer-arena);  
+  }
+  
+  .menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .menu-list li {
+    float: left;
+  }
+  
+  .menu-list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .menu-button {
+    display: none;
+    color: white;
+    font-size: 20px;
+    padding: 14px 16px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-list li {
+      float: none;
+      display: block;
+    }
+  
+    .menu-button {
+      display: block;
+    }
+  
+    .menu-list {
+      display: none;
+    }
+  
+    .menu-list.responsive {
+      display: block;
+    }
+    
+  }
+  
+  @media screen and (max-width:360px){
+    .container{
+        visibility:hidden;
+        width: 0px;
+        margin-top: 0px;
+    }
+    .body-container{
+        justify-items: center;
+        align-items: baseline;
+        justify-content: space-evenly;
+        align-content: center;
+         
+    }
+    .section-img div{
+        border-color: aqua;
+        border-width: 8px;
+        border-right-style:  solid;
+        border-left-style: solid;
+        border-radius: 5px;
+        width: 350px;
+        height: 50px;
+            
+        transition: 1s;
+        flex-direction: column;
+    }
+    .section-img div:hover{
+        height: 95px;
+    }
+    
+  }
+  
+
+  /* ----- DESDE ACA ..------*/
+
+  /* media queries */ 
+@media screen and (max-width: 768px) { 
+    
+    /* diseño a una sola columna */ 
+    .containerP {
+        display: flex;
+        flex-direction: column;
+    }
+/* diseño  */ 
+.presentacion {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    .fondo1, .fondo2 {
+        background-color: var(--footer-arena);
+        background-repeat: no-repeat;
+        background-size: contain;
+        flex-wrap: wrap;
+        background-position: center;
+        flex-direction: column;
+    }
+    .fondo1, .fondo2 > h1 {
+        color: black;
+    }
+    #myButton {
+      display: none;
+    }
+    .footer-bg {
+        display: none;
+    }
+}
+
+@media (max-width:375px) {
+    .containerP {
+    background-color: var(--header-azul);
+
+}
+    .presentacion {
+   
+    position: relative;
+    width: calc(var(--sise-root));
+    background-color: var(--menu-azul);
+    padding: 50px;   
+    
+}
+}
+}
+
+/*---MENU HAMBURGUESA */
+.menu {
+    background-color: var(--footer-arena);  
+  }
+  
+  .menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .menu-list li {
+    float: left;
+  }
+  
+  .menu-list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .menu-button {
+    display: none;
+    color: white;
+    font-size: 20px;
+    padding: 14px 16px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-list li {
+      float: none;
+      display: block;
+    }
+  
+    .menu-button {
+      display: block;
+    }
+  
+    .menu-list {
+      display: none;
+    }
+  
+    .menu-list.responsive {
+      display: block;
+    }
+    
+  }
+ 
+/*---INTENTO DE BOTON RESPONSIVO PARA CONSULTAR EL CLIMA---*/
+@media screen and (max-width: 768px) {
+  #myButton {
+    background-color: var(--footer-arena);  
+    color: black; 
+    border-radius: 10px;
+    cursor: pointer; 
+    font-family: 'La Belle Aurore', cursive;
+
+}
+
+  #myButton:hover {
+    background-color: var(--header-azul); 
+  }
+}

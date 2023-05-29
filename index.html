@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style1.css">
+    <link rel="stylesheet" href="./assets/css/index_styles.css">
+    <link rel="stylesheet" href="/assets/css/clima_btn.css">
+    <link rel="stylesheet" href="/assets/css/menu_burger.css">
+    <link rel="stylesheet" href="/assets/css/responcive.css">
+    <link rel="icon" href="./assets/media/img/turismo.ico">
+    <title>INDEX</title>
+</head>
+<body class = "body-container">
+    <header class="header">
+        
+        <nav class="nav-header">
+            <center><h1>GENERAL TURISMO</h1></center>
+            <button class="menuBurger" onclick="mostrarMenu()">  </button>
+            <ul class="menu-ul">
+                <li><a href="./assets/pages/servicios.html" >SERVICIOS</a></li>
+                <li><a href="./assets/pages/promociones.html">PROMOCIONES</a></li>
+                <li><a href="./assets/pages/nosotros.html">EMPRESA</a></li>
+                <li><a href="./assets/pages/contacto.html">CONTACTO</a></li>    
+        
+            </ul>
+       
+          
+    </header>
+    <main class="main">
+        <div class="section-img">
+			<div class ="rio" onclick="mostrarPromo1()"><p>Viaja por el mundo...</p></div>
+			<div class="huma" onclick="mostrarPromo2()"><p>Experiencias inolvidables...</p></div>
+			<div class="vuelos" onclick="mostrarPromo3()" ><p>Quere volar barato... </p></div>
+			<div class="escapadas" onclick="mostrarPromo4()" ><p>Escapaditas, el tiempo no es una excusa...</p></div>
+			
+		</div>
+        
+        
+    </main>
+    <div class="dto-clima">
+        <button class="btn-3d" onclick="getLocation()">Obtener datos del clima actual</button>
+        <div id="demo"></div>
+        <div id="city"></div>
+        <div id="temp"></div>
+        <div id="pron"></div>
+        <div id="humidity"></div>
+    </div>
+    <!-- <ul>
+            <li id="city"></li>
+            <li id="temp"></li>
+            <li id="pron"></li>
+            <li id="demo"></li>
+        </ul> -->
+</body>
+
+<script src="./assets/js/clima.js"></script>
+<script src="./assets/js/menu-hamb.js"></script>
+
+<footer class="footer">
+    <ul>
+        ®Grupo 19 comisión 23031   -   todos los derechos reservados
+    </ul>   
+
+</footer>
+</html>

@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.body{
+    box-sizing: border-box;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+/* coloco los estilos del header donde esta el titulo y el menu */
+.header{
+    background-color: var(--header-azul);
+    margin:1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+
+    
+}
+header h1{
+    margin-left: var(--sise-root);
+}
+.menuburger{
+    display: none;
+}
+/* coloco el boton y los links un arriba de los otros */
+.nav-header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+}
+/* organizo los links en linea abajo de header */
+.menu-ul{
+    list-style: none;
+
+    /* flex direccion en linea */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-evenly;
+    align-items: stretch;
+
+}
+/* darle estilo a los li */
+.menu-ul li{
+    background-color: var(--menu-azul);
+    border-radius: 5px;
+    align-content: center;
+    border-radius: 5px; 
+    background-color: rgba(6, 214, 160, .4); 
+    width: 130px;
+    height: auto;
+    padding: 10px;   
+    margin:3px;
+    text-align: center; 
+    text-decoration: none;
+    color: black;
+}
+li:hover{
+    z-index: 1;
+    background-color:  rgba(17, 138, 178, .7);
+    box-shadow: 8px 10px 8px rgba(12, 100, 129, 0.986);
+}
+/* MAIN */
+.main{
+    border: 1px solid blue;
+    height: 80vh;
+    display:flex;
+    justify-content: center;
+   
+
+
+}
+.section-img{
+    width: 90vw;
+   
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: stretch;
+    flex-wrap: nowrap
+    
+    
+}
+.viaja,
+.experiencias,
+.vuelos,
+.escapadas{
+    width: calc(var(--sise-root)*10);
+    opacity:0.5;
+    color:beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    margin-left: 2px;
+
+}
+.viaja-cl,
+.experiencias-cl,
+.vuelos-cl,
+.escapadas-cl{
+    display: none;
+}
+
+
+.viaja{
+    background-image: url("/assets/media/img/Viaja-01.png");
+}
+.experiencias{
+    background-image: url("/assets/media/img/Experiencias-01.png");
+}
+.vuelos{
+    background-image: url("/assets/media/img/vuelos-1.png");
+}
+.escapadas{
+    background-image: url("/assets/media/img/escapadas-1.png");
+
+}
+/* hover */
+.viaja:hover{
+    width: calc(var(--sise-root)*50);
+    opacity: 1;
+    transition: width 2s;
+}
+.experiencias:hover{
+    width: calc(var(--sise-root)*50);
+    opacity: 1;
+    transition: width 2s;
+}
+.vuelos:hover{
+    width: calc(var(--sise-root)*50);
+    opacity: 1;
+    transition: width 2s;
+}
+.escapadas:hover{
+    width: calc(var(--sise-root)*50);
+    opacity: 1;
+    transition: width 2s;
+}
+
+
+/* ************************************************* */
+/* desde aca manejo las class que muetran las promo  */
+.viajaJs{
+    color:darkblue;
+}
+.viajaJs::after{
+    content:"Viaja por el mundo con nuestra agencia de turismo y descubre destinos increíbles. Te ofrecemos paquetes personalizados para vivir aventuras inolvidables. ¡Explora el mundo a tu manera y crea recuerdos que durarán toda la vida! ";
+}
+.experienciasJs::after{
+    content:"Vive experiencias únicas con nuestra agencia de turismo. Te llevamos a lugares extraordinarios, donde podrás sumergirte en culturas fascinantes y disfrutar de actividades inolvidables. ¡Descubre el mundo de una manera diferente con nosotros! ";
+}
+.vuelosJs::after{
+    content:"Ahorrá Tiempo y Dinero en la Planificación de Tu Viaje ¡Compará Precios Acá! Los Mejores Precios de Argentina. Muchas Ofertas Por Tiempo Limitado! Pagá Menos Por Viajar.";
+
+}
+.escapadasJs::after{
+    content: "Encontrá la escapada ideal para cortar con la rutina y desconectar. Descubrí nuevos destinos, respirá naturaleza, sumergite en el relax, animate a la aventura, sentí el latido de la ciudad.";
+}
+.txt-promo{
+    visibility: hidden;
+}
+
+/* FOOTER */
+.footer{
+    border: 2px solid black;
+}

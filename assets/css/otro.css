@@ -1,0 +1,95 @@
+/* estilos para pantallas con un ancho máximo de 768px (tablets y smartphones en modo vertical) */
+@media only screen and (max-width: 768px) {
+    /* ajustar el tamaño de la fuente */
+    body {
+        font-size: 16px;
+    }
+
+    /* ajustar el tamaño de la imagen */
+    .presentacion .fondo1 img, .presentacion .fondo2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* ajustar el ancho de la sección principal */
+    .containerP {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* ajustar el tamaño de la letra del enlace */
+    .enlace a {
+        font-size: 16px;
+    }
+
+    /* ajustar el tamaño del encabezado */
+    header h1 {
+        font-size: 28px;
+    }
+
+    /* ajustar el ancho del menú */
+    .nav-header {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* estilos para pantallas con un ancho mínimo de 769px y un máximo de 1024px (tablets y smartphones en modo horizontal) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* ajustar el tamaño de la fuente */
+    body {
+        font-size: 20px;
+    }
+
+    /* ajustar el tamaño de la imagen */
+    .presentacion .fondo1 img, .presentacion .fondo2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* ajustar el ancho de la sección principal */
+    .containerP {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* ajustar el tamaño de la letra del enlace */
+    .enlace a {
+        font-size: 20px;
+    }
+
+    /* ajustar el tamaño del encabezado */
+    header h1 {
+        font-size: 36px;
+    }
+}
+
+/* estilos para pantallas con un ancho mínimo de 1025px (computadoras de escritorio y portátiles) */
+@media only screen and (min-width: 1025px) {
+    /* ajustar el tamaño de la fuente */
+    body {
+        font-size: 24px;
+    }
+
+    /* ajustar el tamaño de la imagen */
+    .presentacion .fondo1 img, .presentacion .fondo2 img {
+        width: auto;
+        height: 100%;
+    }
+
+    /* ajustar el ancho de la sección principal */
+    .containerP {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* ajustar el tamaño de la letra del enlace */
+    .enlace a {
+        font-size: 24px;
+    }
+
+    /* ajustar el tamaño del encabezado */
+    header h1 {
+        font-size: 48px;
+    }
+}

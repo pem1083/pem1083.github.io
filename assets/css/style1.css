@@ -1,0 +1,36 @@
+
+/*PALETA DE COLORES-- SCSS RGB 
+$bright-pink-crayola: rgba(239, 71, 111, 1);
+$sunglow: rgba(255, 209, 102, 1);
+$emerald: rgba(6, 214, 160, 1);
+$blue-ncs: rgba(17, 138, 178, 1);
+$midnight-green: rgba(7, 59, 76, 1);
+*/
+:root{
+    --fondo-arena:rgba(255, 209, 102, .5);
+    --header-azul:rgba(6, 214, 160, .4);
+    --select-azul:rgba(17, 138, 178, 1);
+    --menu-azul:rgba(6, 214, 160, 1); 
+    --footer-arena:rgba(255, 209, 102, .8);
+
+    --sise-root: 10vh;
+
+}
+/* body{
+    background-color: var(--fondo-arena);
+    padding: 0;
+    margin: 0;
+ }
+header{
+    background-color:rgba(6, 214, 160, .4);
+    height: 100px; 
+    margin: 0;
+
+}
+main{
+    height: 400px;
+}
+footer{
+    background-color: var(--footer-arena);
+    
+} */

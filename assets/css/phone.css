@@ -1,0 +1,51 @@
+@media (max-width: 375px) {
+    .imagenCard1 {
+        background-image: url("../media/img/travel3.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: bounce 1s ease-in-out 1;
+        flex-wrap: wrap;
+    }
+    .imagenCard1 > h1 {
+        color: black;
+    }
+}
+
+@media (max-width: 375px) {
+    .nav-header  ul li{
+        border-radius: 5px; 
+        background-color: var(--menu-azul);background-color: var(--menu-azul);
+        width: 70px;
+        height: 30px;   
+        margin:3px;
+        display: flex;    
+        text-decoration: none;
+        color: black;
+        float:right;       
+    }
+    .nav-header ul li:hover{
+        z-index: 1;
+        background-color:  rgba(17, 138, 178, 1);
+        box-shadow: 8px 10px 8px rgba(12, 100, 129, 0.986);
+}
+    header > h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width:375px) {
+    .containerP {
+    display: flex;
+    background-color: var(--header-azul);
+    position: relative;
+    width: 100%;
+}
+    .presentacion {
+    display: flex;
+    position: relative;
+    width: calc(var(--sise-root));
+    background-color: var(--menu-azul);
+    padding: 50px;   
+    
+}
+}

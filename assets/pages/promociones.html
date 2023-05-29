@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/phones.css">
+    <link rel="stylesheet" href="/assets/css/index_style.css"> 
+    <link rel="stylesheet" href="/assets/css/style1.css"> 
+    <script src="/assets/js/menu-hamburgesa.js"></script>
+    <link rel="icon" href="../media/img/turismo.ico">
+    <title>PROMOCIONES</title>
+</head>
+<body>
+    <header class = "header-turismo">
+        <center><h1>GENERAL TURISMO</h1></center>
+        
+            <nav class="menu">  
+                <div class="menu-button" onclick="toggleMenu()">&#9776;</div>
+                <ul class="menu-list" id="menuList">
+                <li><a href="./servicios.html">SERVICIOS</a></li>
+                <li><a href="../../index.html">INICIO</a></li>
+                <li><a href="./nosotros.html">EMPRESA</a></li>
+                <li><a href="../pages/contacto.html">CONTACTO</a></li>
+                </ul>
+             </nav>
+    </header>
+    <br>    
+    <main>
+    <div class="containerP">
+        <div class="imagenCard1"> 
+            <div class = "tituloCard1"></div>
+        </div>
+        <div class = "presentacion"> 
+            <div class="fondo1"></div>
+            <div>
+                <h2>PROMOCIONES EXCLUSIVAS</h2></div>
+        
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate mollitia dolore repudi
+                andae, perferendis velit odio sint possimus incidunt quas blanditiis 
+                repellat sapiente consectetur, at sed, optio doloribus soluta dolor nemo. Lorem ipsum, 
+                dolor sit amet consectetur adipisicing elit. Officia officiis dolorem, asperiores 
+                sit temporibus distinctio illo quam vel aut explicabo aperiam obcaecati tenetur sint 
+                minus? Adipisci officiis sunt pariatur harum! Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eius quis quidem architecto, omnis a fugit ducimus velit natus officiis nulla
+                vitae laudantium magnam vero, magni quos debitis sint neque reiciendis.</p>
+                <div class="enlace">
+                    <a href="">PROMOCIONES</a>
+                </div>
+                <br> <br>
+        </div>
+        <div class="imagenCard2"> 
+            <div class="tituloCard2"></div>
+        <div class = "presentacion">
+            <div class="fondo2"></div> 
+            <div>
+                <h2>NUESTROS BENEFICIOS</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate mollitia dolore repudi
+                andae, perferendis velit odio sint possimus incidunt quas blanditiis 
+                repellat sapiente consectetur, at sed, optio doloribus soluta dolor nemo. Lorem ipsum, 
+                dolor sit amet consectetur adipisicing elit. Officia officiis dolorem, asperiores 
+                sit temporibus distinctio illo quam vel aut explicabo aperiam obcaecati tenetur sint 
+                minus? Adipisci officiis sunt pariatur harum! Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eius quis quidem architecto, omnis a fugit ducimus velit natus officiis nulla
+                vitae laudantium magnam vero, magni quos debitis sint neque reiciendis.</p>
+                <div class="enlace">
+                    <a href="">BENEFICIOS</a>
+                </div>
+        </div>
+       
+    </div>
+    </main>
+    <br>
+    <!-- SE UTLIZA API DE OPEN WATHER MAP-->
+<div class="containerAPI">
+
+    <button id="myButton">Obtener datos del clima actual</button>
+    <div id="demo"></div>
+    <div id="city"></div>
+    <div id="temp"></div>
+    <div id="pron"></div>
+    <div id="humidity"></div>
+
+<script>
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        document.getElementById("demo").innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+
+    function showPosition(position) {
+      const APIkey = "4fecb089c0fa417a4b11ea1e55f7a414";
+      const URL_API = `https://api.openweathermap.org/data/2.5/weather?&units=metric&lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${APIkey}`;
+
+      async function climaActual() {
+        const resp = await fetch(URL_API);
+        const data = await resp.json();
+
+        console.log(data);
+
+        document.querySelector("#city").innerHTML = ` Ciudad: ${data.name}`;
+        document.querySelector("#temp").innerHTML = ` Temperatura: ${data.main.temp}` + "°C";
+        document.querySelector("#pron").innerHTML = ` Descripción: ${data.weather[0].description}`;
+        document.querySelector("#humidity").innerHTML = ` Humedad: ${data.main.humidity}` + "%";
+      }
+
+      climaActual();
+    }
+
+    // Obtén el botón por su id
+    var button = document.getElementById("myButton");
+
+    // Asigna la función al evento click del botón
+    button.addEventListener("click", getLocation);
+  </script>
+  </div>
+  <br>
+    <footer>        
+    <h2 class = "footer-bg">®Grupo 19 comisión 23031</h2>
+    </footer> 
+    <script src="../js/menu-hamburgesa.js"></script>
+</body>
+</html>
